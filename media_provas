@@ -1,0 +1,27 @@
+Algoritmo "media_provas"
+//1. Crie um algoritmo que solicite e leia a informação de 4 provas.
+//Ao final, o código deve apresentar a média entre estas 4 notas.
+
+//2. Modifique o exemplo das notas com um número de provas
+//definido pelo usuário no início do programa.
+
+Var
+   P, provas, soma, media : real
+   cont : inteiro
+
+Inicio
+   soma := 0
+   cont := 1
+   escreva ("Digite a quantidade de provas: ")
+   leia (provas)
+   enquanto (cont <= provas) faça
+      escreva("Digite o valor da prova",cont,": ")
+      leia(P)
+
+      soma := soma + P // ACUMULADOR
+      cont := cont + 1 // CONTADOR
+   fimenquanto
+
+   media := soma/provas
+   escreva("A media entre as provas foi de", media)
+Fimalgoritmo
