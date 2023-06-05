@@ -1,0 +1,54 @@
+Algoritmo "taxa_juros_investimento"
+//1. Escreva um programa que pergunte a aplicação inicial,
+//a taxa de juros de um investimento e a quantidade de
+//meses que o dinheiro permanecerá aplicado. Exiba os
+//valores mês a mês disponível na aplicação e escreva o
+//total ganho com juros no período.
+
+//*** Dados da aplicação ***
+//Valor aplicado [R$]: 1000
+//Tempo de aplicação [meses]: 10
+//Taxa de juros a.m. [%]: 2
+
+//*** Cálculos ***
+//Saldo no 1º mês = R$ 1020.00
+//Saldo no 2º mês = R$ 1040.40
+//Saldo no 3º mês = R$ 1061.21
+//Saldo no 4º mês = R$ 1082.43
+//Saldo no 5º mês = R$ 1104.08
+//Saldo no 6º mês = R$ 1126.16
+//Saldo no 7º mês = R$ 1148.69
+//Saldo no 8º mês = R$ 1171.66
+//Saldo no 9º mês = R$ 1195.09
+//Saldo no 10º mês = R$ 1218.99
+
+//*** Resultados ***
+//Você obteve um juro total de R$ 218.99
+
+Var
+   valor, taxa,  : real
+   temp, mensal : inteiro
+
+Inicio
+   escreval ("*** Dados da aplicação ***")
+   escreva ("Valor aplicado [R$]: ")
+   leia (valor)
+   escreva ("Tempo de aplicação [meses]: ")
+   leia (temp)
+   escreva ("Taxa de juros a.m. [%]: ")
+   leia (taxa)
+
+   mensal <- (valor/temp)
+   taxa <- (mensal*taxa/100)
+   
+   //INCOMPLETO!!
+   
+   //escreval ("*** Cálculos ***")
+   //escreva ("Saldo no 1º mês = R$ ",s1)
+   //leia (s1)
+   //escreva ("Saldo no 2º mês = R$ ",s2)
+   //leia (s2)
+   //escreva ("Saldo no 3º mês = R$ ",s3)
+   //leia (s3)
+
+Fimalgoritmo
